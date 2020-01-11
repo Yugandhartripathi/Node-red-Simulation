@@ -1,0 +1,2576 @@
+[
+    {
+        "id": "23467abd.82d316",
+        "type": "tab",
+        "label": "Sensor Nodes",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cc49a83a.0b1868",
+        "type": "tab",
+        "label": "eGateWayNodes",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2f346faf.ed873",
+        "type": "tab",
+        "label": "eNode",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2ce9304f.5fe99",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "11885",
+        "clientid": "client1",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "dc8f406e.9fc95",
+        "type": "mqtt-dynamic-broker",
+        "z": "",
+        "broker": "localhost",
+        "port": "11885",
+        "clientid": "client1",
+        "usetls": false,
+        "verifyservercert": true,
+        "compatmode": true,
+        "keepalive": "15",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "1031e57a.3df6cb",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "192.168.24.2",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "15",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "a92ebafa.5bd178",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "192.168.24.2",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "15",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "7f045a13.0d8444",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Battery Usage",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "84f25c1f.d9696",
+        "type": "ui_group",
+        "z": "",
+        "name": "UI",
+        "tab": "7f045a13.0d8444",
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "e5c1a3ce.cb6c5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "179c326.e1498ce",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Initial",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "13352e6b.44b0a2"
+            ]
+        ]
+    },
+    {
+        "id": "777e95a8.b4cf8c",
+        "type": "mqtt-dynamic in",
+        "z": "23467abd.82d316",
+        "name": "WakeUpSignal",
+        "topic": "sensor/sn1",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 180,
+        "y": 40,
+        "wires": [
+            [
+                "ef21bb6e.dab598"
+            ]
+        ]
+    },
+    {
+        "id": "1ac7f2d0.4f535d",
+        "type": "configurable interval",
+        "z": "23467abd.82d316",
+        "name": "Internal Timer",
+        "interval": "1",
+        "onstart": false,
+        "do_enable": false,
+        "msg": "ping",
+        "showstatus": true,
+        "unit": "seconds",
+        "statusformat": "YYYY-MM-D HH:mm:ss",
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "618efa25.1290a4"
+            ]
+        ]
+    },
+    {
+        "id": "618efa25.1290a4",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "sensorReading",
+        "func": "msg.tempParams={};\nmsg.tempParams.value = Math.round(Math.random()*100);\nmsg.tempParams.eot=0;\nmsg.params=flow.get('params1');\nmsg.time=flow.get('time1');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "d994e86.6167e18"
+            ]
+        ]
+    },
+    {
+        "id": "b04e7d96.5e43",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 530,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "fd3df859.fcf048",
+        "type": "mqtt-dynamic out",
+        "z": "23467abd.82d316",
+        "name": "sendToeGN",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 690,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b21311ff.0f525",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "EOT",
+        "func": "msg.tempParams={};\nif(msg.payload==\"disabled\")\n{\n    msg.tempParams.eot=1;\n    msg.tempParams.value=0;\n    msg.params.batteryLeft=msg.params.batteryLeft-((msg.params.batteryUsageRate*msg.params.batteryLeft));\n    if(msg.params.batteryLeft<10)\n        msg.params.batteryLeft=0;\n    return msg;\n}\nelse\n{\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "d994e86.6167e18"
+            ]
+        ]
+    },
+    {
+        "id": "d994e86.6167e18",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "MQTTSetter",
+        "func": "msg.payload={};\nmsg.payload=msg.tempParams;\nmsg.payload.params={};\nmsg.payload.time={};\nmsg.payload.params=msg.params;\nmsg.payload.time=msg.time;\ndelete msg.params;\ndelete msg.time;\ndelete msg.tempParams;\n\nmsg.payload.From = \"Sensor \"+msg.payload.params.sensorNode;\nmsg.topic = \"eGN/k\"+msg.payload.params.targetEGN;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "b04e7d96.5e43",
+                "fd3df859.fcf048"
+            ]
+        ]
+    },
+    {
+        "id": "5f5cf33c.de916c",
+        "type": "mqtt-dynamic in",
+        "z": "cc49a83a.0b1868",
+        "name": "eGN1",
+        "topic": "eGN/k1",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 50,
+        "y": 340,
+        "wires": [
+            [
+                "6a73c06e.afd46"
+            ]
+        ]
+    },
+    {
+        "id": "d4633f48.71eb2",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "aggData",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 540,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8956cff1.de681",
+        "type": "join",
+        "z": "cc49a83a.0b1868",
+        "name": "collectDATA",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "d4633f48.71eb2",
+                "d56f7c2b.16e63"
+            ]
+        ]
+    },
+    {
+        "id": "2270f40.1e36c0c",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "goingToENODE",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 340,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "aced7554.15eab8",
+        "type": "change",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "b7ab732.5db849"
+            ]
+        ]
+    },
+    {
+        "id": "cfd4f0e7.d4ae9",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "endGame?",
+        "property": "payload.eot",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "8956cff1.de681"
+            ],
+            [
+                "aced7554.15eab8"
+            ]
+        ]
+    },
+    {
+        "id": "6a73c06e.afd46",
+        "type": "json",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "da6a2dfd.dbf44",
+                "fb8127df.037578"
+            ]
+        ]
+    },
+    {
+        "id": "d56f7c2b.16e63",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "topicENODE",
+        "func": "delete msg.payload.eot;\nmsg.topic = \"eNode\";\nmsg.payload.From = \"eGN 1\";\nfunction average(p,c,i,a){return p + (c/a.length)}\nmsg.payload.calculated={};\nmsg.payload.calculated.mean=msg.payload.value.reduce(average,0);\nfunction sum(p,c){return (p + Math.pow((c-msg.payload.calculated.mean),2))}\nmsg.payload.calculated.vari=(msg.payload.value.reduce(sum,0))/msg.payload.value.length;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "2270f40.1e36c0c",
+                "4e4884d8.882f8c"
+            ]
+        ]
+    },
+    {
+        "id": "4e4884d8.882f8c",
+        "type": "mqtt-dynamic out",
+        "z": "cc49a83a.0b1868",
+        "name": "sendToeNode",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "dc8f406e.9fc95",
+        "x": 560,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fb8127df.037578",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "Where is it from?",
+        "property": "payload.From",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "Sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "eNode",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "cfd4f0e7.d4ae9",
+                "1bf61724.06fd29"
+            ],
+            [
+                "7ba7fd65.fdbdc4",
+                "26a32e45.637842"
+            ]
+        ]
+    },
+    {
+        "id": "7ba7fd65.fdbdc4",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "calculate deltaT",
+        "func": "msg.payload.time.deltaT=(msg.payload.time.quality+msg.payload.time.greekTornado)/(msg.payload.time.Energy*msg.payload.time.CoV);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "a0474772.4c0918"
+            ]
+        ]
+    },
+    {
+        "id": "a0474772.4c0918",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "exponentialAveraging",
+        "func": "var batteryUsedDuringSleep=0.002*msg.payload.params.batteryLeft;\nvar Tn=msg.payload.time.Tn;\nvar tnth=msg.payload.time.tnth;\nvar alpha = msg.payload.time.alpha;\nvar Tn1 = (alpha*tnth)+((1-alpha)*Tn);\nvar tn1th = Tn1 + msg.payload.time.deltaT;\nmsg.payload.time.Tn=Math.ceil(Tn1);\nmsg.payload.time.tnth=Math.ceil(tn1th);\nmsg.payload.time.batteryLeft =msg.payload.time.batteryLeft - msg.payload.time.tnth*batteryUsedDuringSleep;\nmsg.saveFromTimer=msg.payload;\nmsg.payload=\"on\";\nmsg.timeout=Math.ceil(tn1th);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "18072280.3b179e",
+                "d1ddf0cf.8654b"
+            ]
+        ]
+    },
+    {
+        "id": "18072280.3b179e",
+        "type": "mytimeout",
+        "z": "cc49a83a.0b1868",
+        "name": "SleepCounter",
+        "outtopic": "",
+        "outsafe": "on",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": true,
+        "repeat": false,
+        "again": false,
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "9a60b330.40415",
+                "d1aa4cb3.7b8a8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9a60b330.40415",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 450,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "996b7286.07148",
+        "type": "mqtt-dynamic in",
+        "z": "2f346faf.ed873",
+        "name": "eNode",
+        "topic": "eNode",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "1f1fd968.e77e77"
+            ]
+        ]
+    },
+    {
+        "id": "2ae57c62.858d14",
+        "type": "debug",
+        "z": "2f346faf.ed873",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1b5ffafe.1a2115",
+        "type": "function",
+        "z": "2f346faf.ed873",
+        "name": "temporaryCalculationofParams",
+        "func": "//msg.payload.time.CoV=0.6;\nmsg.payload.time.CoV=(Math.sqrt(msg.payload.calculated.vari)/msg.payload.calculated.mean)*100;\nmsg.payload.time.quality=5;\nmsg.payload.time.greekTornado=0;\nmsg.payload.time.Energy=msg.payload.params.batteryLeft;\nmsg.topic=\"eGN/k\"+msg.payload.params.targetEGN;\n//if(msg.payload.params.targetEGN=='2')\n//{\n  //  msg.payload.time.greekTornado = 1;\n//}\nmsg.payload.From=\"eNode\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "312daf3c.477dc",
+                "a1b383e.e03188"
+            ]
+        ]
+    },
+    {
+        "id": "312daf3c.477dc",
+        "type": "mqtt-dynamic out",
+        "z": "2f346faf.ed873",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 1020,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a1b383e.e03188",
+        "type": "debug",
+        "z": "2f346faf.ed873",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 920,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "da6a2dfd.dbf44",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1bf61724.06fd29",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 390,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "26a32e45.637842",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 380,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1f1fd968.e77e77",
+        "type": "json",
+        "z": "2f346faf.ed873",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "2ae57c62.858d14",
+                "1b5ffafe.1a2115"
+            ]
+        ]
+    },
+    {
+        "id": "d1ddf0cf.8654b",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 100,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d1aa4cb3.7b8a8",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 270,
+        "y": 760,
+        "wires": [
+            [
+                "e6f0d671.567e88"
+            ]
+        ]
+    },
+    {
+        "id": "e6f0d671.567e88",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "MQTTsetter",
+        "func": "msg.payload=msg.saveFromTimer;\n\ndelete msg.saveFromTimer;\nvar destination = \"sensor/sn\"+msg.payload.params.sensorNode;\nmsg.topic=destination;\nmsg.payload.From=\"eGN 1\";\n\ndelete msg.timeout;\ndelete msg.payload.value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "50e84aa.b989bb4",
+                "566f125.18728ec"
+            ]
+        ]
+    },
+    {
+        "id": "50e84aa.b989bb4",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 270,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "566f125.18728ec",
+        "type": "mqtt-dynamic out",
+        "z": "cc49a83a.0b1868",
+        "name": "wakeUpSensor",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 460,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "13352e6b.44b0a2",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "Initialisation",
+        "func": "msg.params={};\nmsg.params.sensorNode = 1;\nmsg.params.batteryLeft = 100;\nmsg.params.batteryUsageRate = 0.004;\nmsg.params.targetEGN = 1;\nmsg.params.sensorType = 1; //1 for periodic,2 for trigger\nmsg.time={};\nmsg.time.Tn = 6;\nmsg.time.tnth = 12;\nmsg.time.alpha = 0.5;\nflow.set('params1',msg.params);\nflow.set('time1',msg.time);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "6943e20.255cd2",
+                "22a1336d.a0583c"
+            ]
+        ]
+    },
+    {
+        "id": "6943e20.255cd2",
+        "type": "mytimeout",
+        "z": "23467abd.82d316",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "enabled",
+        "outwarning": "",
+        "outunsafe": "disabled",
+        "warning": "0",
+        "timer": "5",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "1ac7f2d0.4f535d",
+                "b21311ff.0f525"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f2f02b20.39ae48",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 570,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ef21bb6e.dab598",
+        "type": "json",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 40,
+        "wires": [
+            [
+                "f2f02b20.39ae48",
+                "f8089810.99ab68"
+            ]
+        ]
+    },
+    {
+        "id": "f8089810.99ab68",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "processWakeUpSignal",
+        "func": "flow.set('params1',msg.payload.params);\nflow.set('time1',msg.payload.time);\nmsg.params=msg.payload.params;\nmsg.time=msg.payload.time;\ndelete msg.payload;\nmsg.payload=\"on\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "cb34e2bf.ed4e5",
+                "decc4355.80bb9",
+                "22a1336d.a0583c"
+            ]
+        ]
+    },
+    {
+        "id": "cb34e2bf.ed4e5",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ff1d4cf5.cdea3",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "6943e20.255cd2"
+            ]
+        ]
+    },
+    {
+        "id": "f9f41bb2.e34068",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Initial",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 890,
+        "y": 320,
+        "wires": [
+            [
+                "ff4fcebf.e4716"
+            ]
+        ]
+    },
+    {
+        "id": "8aa31ea.fb8c5e",
+        "type": "mqtt-dynamic in",
+        "z": "23467abd.82d316",
+        "name": "WakeUpSignal",
+        "topic": "sensor/sn2",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 960,
+        "y": 40,
+        "wires": [
+            [
+                "82a588f0.98fc78"
+            ]
+        ]
+    },
+    {
+        "id": "aabca8b8.1b37d8",
+        "type": "configurable interval",
+        "z": "23467abd.82d316",
+        "name": "Internal Timer",
+        "interval": "2",
+        "onstart": false,
+        "do_enable": false,
+        "msg": "ping",
+        "showstatus": true,
+        "unit": "seconds",
+        "statusformat": "YYYY-MM-D HH:mm:ss",
+        "x": 1380,
+        "y": 220,
+        "wires": [
+            [
+                "1282a362.16538d"
+            ]
+        ]
+    },
+    {
+        "id": "1282a362.16538d",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "sensorReading",
+        "func": "msg.tempParams={};\nmsg.tempParams.value = Math.round(Math.random()*100);\nmsg.tempParams.eot=0;\nmsg.params=flow.get('params2');\nmsg.time=flow.get('time2');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1360,
+        "y": 300,
+        "wires": [
+            [
+                "5fe6d84c.73de78"
+            ]
+        ]
+    },
+    {
+        "id": "6bcce1a8.799ff",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1270,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8557a1f8.ae676",
+        "type": "mqtt-dynamic out",
+        "z": "23467abd.82d316",
+        "name": "sendToeGN",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 1430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ff58a623.87c978",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "EOT",
+        "func": "msg.tempParams={};\nif(msg.payload==\"disabled\")\n{\n    msg.tempParams.eot=1;\n    msg.tempParams.value=0;\n    msg.params.batteryLeft-=(100*msg.params.batteryUsageRate);\n    if(msg.params.batteryLeft<0)\n        msg.params.batteryLeft=0;\n    return msg;\n}\nelse\n{\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1130,
+        "y": 300,
+        "wires": [
+            [
+                "5fe6d84c.73de78"
+            ]
+        ]
+    },
+    {
+        "id": "5fe6d84c.73de78",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "MQTTSetter",
+        "func": "msg.payload={};\nmsg.payload=msg.tempParams;\nmsg.payload.params={};\nmsg.payload.time={};\nmsg.payload.params=msg.params;\nmsg.payload.time=msg.time;\ndelete msg.params;\ndelete msg.time;\ndelete msg.tempParams;\nmsg.payload.From = \"Sensor \"+msg.payload.params.sensorNode;\nmsg.topic = \"eGN/k\"+msg.payload.params.targetEGN;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1110,
+        "y": 380,
+        "wires": [
+            [
+                "6bcce1a8.799ff",
+                "8557a1f8.ae676"
+            ]
+        ]
+    },
+    {
+        "id": "ff4fcebf.e4716",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "Initialisation",
+        "func": "msg.params={};\nmsg.params.sensorNode = 2;\nmsg.params.batteryLeft = 100;\nmsg.params.batteryUsageRate = 0.2;\nmsg.params.targetEGN = 1;\nmsg.params.sensorType = 1; //1 for periodic,2 for trigger\nmsg.time={};\nmsg.time.Tn = 1;\nmsg.time.tnth = 1;\nmsg.time.alpha = 0.1;\nflow.set('params2',msg.params);\nflow.set('time2',msg.time);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "f75adaaf.efdd88",
+                "f4d49e71.58982"
+            ]
+        ]
+    },
+    {
+        "id": "f75adaaf.efdd88",
+        "type": "mytimeout",
+        "z": "23467abd.82d316",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "enabled",
+        "outwarning": "",
+        "outunsafe": "disabled",
+        "warning": "0",
+        "timer": "5",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1170,
+        "y": 220,
+        "wires": [
+            [
+                "aabca8b8.1b37d8",
+                "ff58a623.87c978"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "df2fe0c.c1e952",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "82a588f0.98fc78",
+        "type": "json",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 40,
+        "wires": [
+            [
+                "df2fe0c.c1e952",
+                "336ba379.45b86c"
+            ]
+        ]
+    },
+    {
+        "id": "336ba379.45b86c",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "processWakeUpSignal",
+        "func": "flow.set('params2',msg.payload.params);\nflow.set('time2',msg.payload.time);\nmsg.params=msg.payload.params;\nmsg.time=msg.payload.time;\ndelete msg.payload;\nmsg.payload=\"on\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 980,
+        "y": 100,
+        "wires": [
+            [
+                "c24d1ce7.4491e",
+                "debe642a.654208",
+                "f4d49e71.58982"
+            ]
+        ]
+    },
+    {
+        "id": "c24d1ce7.4491e",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1250,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f6f8960f.c5a9c8",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "f75adaaf.efdd88"
+            ]
+        ]
+    },
+    {
+        "id": "42c529ee.a4cbc8",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Initial",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 740,
+        "wires": [
+            [
+                "2de9c857.6062b8"
+            ]
+        ]
+    },
+    {
+        "id": "b2dc33ec.09ddf",
+        "type": "mqtt-dynamic in",
+        "z": "23467abd.82d316",
+        "name": "WakeUpSignal",
+        "topic": "sensor/sn3",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "80a8fde3.cef07"
+            ]
+        ]
+    },
+    {
+        "id": "a37338a7.3141c8",
+        "type": "configurable interval",
+        "z": "23467abd.82d316",
+        "name": "Internal Timer",
+        "interval": "2",
+        "onstart": false,
+        "do_enable": false,
+        "msg": "ping",
+        "showstatus": true,
+        "unit": "seconds",
+        "statusformat": "YYYY-MM-D HH:mm:ss",
+        "x": 560,
+        "y": 600,
+        "wires": [
+            [
+                "cd1f8fb9.93f88"
+            ]
+        ]
+    },
+    {
+        "id": "cd1f8fb9.93f88",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "sensorReading",
+        "func": "msg.tempParams={};\nmsg.tempParams.value = Math.round(Math.random()*100);\nmsg.tempParams.eot=0;\nmsg.params=flow.get('params3');\nmsg.time=flow.get('time3');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 720,
+        "wires": [
+            [
+                "2fa9a733.2e21b8"
+            ]
+        ]
+    },
+    {
+        "id": "8b0521cb.483e8",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 530,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9f8053b3.963d8",
+        "type": "mqtt-dynamic out",
+        "z": "23467abd.82d316",
+        "name": "sendToeGN",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 690,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "29074a7b.db5d76",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "EOT",
+        "func": "msg.tempParams={};\nif(msg.payload==\"disabled\")\n{\n    msg.tempParams.eot=1;\n    msg.tempParams.value=0;\n    msg.params.batteryLeft-=(100*msg.params.batteryUsageRate);\n    if(msg.params.batteryLeft<0)\n        msg.params.batteryLeft=0;\n    return msg;\n}\nelse\n{\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 720,
+        "wires": [
+            [
+                "2fa9a733.2e21b8"
+            ]
+        ]
+    },
+    {
+        "id": "2fa9a733.2e21b8",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "MQTTSetter",
+        "func": "msg.payload={};\nmsg.payload=msg.tempParams;\nmsg.payload.params={};\nmsg.payload.time={};\nmsg.payload.params=msg.params;\nmsg.payload.time=msg.time;\ndelete msg.params;\ndelete msg.time;\ndelete msg.tempParams;\nmsg.payload.From = \"Sensor \"+msg.payload.params.sensorNode;\nmsg.topic = \"eGN/k\"+msg.payload.params.targetEGN;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 800,
+        "wires": [
+            [
+                "8b0521cb.483e8",
+                "9f8053b3.963d8"
+            ]
+        ]
+    },
+    {
+        "id": "2de9c857.6062b8",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "Initialisation",
+        "func": "msg.params={};\nmsg.params.sensorNode = 3;\nmsg.params.batteryLeft = 100;\nmsg.params.batteryUsageRate = 0.05;\nmsg.params.targetEGN = 2;\nmsg.params.sensorType = 1; //1 for periodic,2 for trigger\nmsg.time={};\nmsg.time.Tn = 2;\nmsg.time.tnth = 2;\nmsg.time.alpha = 0.5;\nflow.set('params3',msg.params);\nflow.set('time3',msg.time);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "ab5e8752.9273a8",
+                "3a2ae01c.8b519"
+            ]
+        ]
+    },
+    {
+        "id": "ab5e8752.9273a8",
+        "type": "mytimeout",
+        "z": "23467abd.82d316",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "enabled",
+        "outwarning": "",
+        "outunsafe": "disabled",
+        "warning": "0",
+        "timer": "5",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 420,
+        "y": 660,
+        "wires": [
+            [
+                "a37338a7.3141c8",
+                "29074a7b.db5d76"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "da518eb9.f2b4",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 530,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "80a8fde3.cef07",
+        "type": "json",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "da518eb9.f2b4",
+                "7df40e4e.9cac8"
+            ]
+        ]
+    },
+    {
+        "id": "7df40e4e.9cac8",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "processWakeUpSignal",
+        "func": "flow.set('params3',msg.payload.params);\nflow.set('time3',msg.payload.time);\nmsg.params=msg.payload.params;\nmsg.time=msg.payload.time;\ndelete msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 540,
+        "wires": [
+            [
+                "628b9740.4ba8a8",
+                "c25c9584.31a5c8",
+                "3a2ae01c.8b519"
+            ]
+        ]
+    },
+    {
+        "id": "628b9740.4ba8a8",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 450,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e9a65bed.c9f418",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "ab5e8752.9273a8"
+            ]
+        ]
+    },
+    {
+        "id": "e15be015.93c2d",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Initial",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 950,
+        "y": 660,
+        "wires": [
+            [
+                "dd119f1c.14a1"
+            ]
+        ]
+    },
+    {
+        "id": "1dd9738f.f8039c",
+        "type": "mqtt-dynamic in",
+        "z": "23467abd.82d316",
+        "name": "WakeUpSignal",
+        "topic": "sensor/sn4",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 980,
+        "y": 480,
+        "wires": [
+            [
+                "1d1ce120.dcea2f"
+            ]
+        ]
+    },
+    {
+        "id": "4df51563.a1fc5c",
+        "type": "configurable interval",
+        "z": "23467abd.82d316",
+        "name": "Internal Timer",
+        "interval": "2",
+        "onstart": false,
+        "do_enable": false,
+        "msg": "ping",
+        "showstatus": true,
+        "unit": "seconds",
+        "statusformat": "YYYY-MM-D HH:mm:ss",
+        "x": 1400,
+        "y": 660,
+        "wires": [
+            [
+                "7eadc05d.846fa"
+            ]
+        ]
+    },
+    {
+        "id": "7eadc05d.846fa",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "sensorReading",
+        "func": "msg.tempParams={};\nmsg.tempParams.value = Math.round(Math.random()*100);\nmsg.tempParams.eot=0;\nmsg.params=flow.get('params4');\nmsg.time=flow.get('time4');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1360,
+        "y": 740,
+        "wires": [
+            [
+                "f1d7266b.4f7858"
+            ]
+        ]
+    },
+    {
+        "id": "f1352184.eaa4f",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1230,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "6549abd6.3cd244",
+        "type": "mqtt-dynamic out",
+        "z": "23467abd.82d316",
+        "name": "sendToeGN",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 1410,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "a13e486a.e3d1e8",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "EOT",
+        "func": "msg.tempParams={};\nif(msg.payload==\"disabled\")\n{\n    msg.tempParams.eot=1;\n    msg.tempParams.value=0;\n    msg.params.batteryLeft-=(100*msg.params.batteryUsageRate);\n    if(msg.params.batteryLeft<0)\n        msg.params.batteryLeft=0;\n    return msg;\n}\nelse\n{\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1130,
+        "y": 740,
+        "wires": [
+            [
+                "f1d7266b.4f7858"
+            ]
+        ]
+    },
+    {
+        "id": "f1d7266b.4f7858",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "MQTTSetter",
+        "func": "msg.payload={};\nmsg.payload=msg.tempParams;\nmsg.payload.params={};\nmsg.payload.time={};\nmsg.payload.params=msg.params;\nmsg.payload.time=msg.time;\ndelete msg.params;\ndelete msg.time;\ndelete msg.tempParams;\nmsg.payload.From = \"Sensor \"+msg.payload.params.sensorNode;\nmsg.topic = \"eGN/k\"+msg.payload.params.targetEGN;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1030,
+        "y": 800,
+        "wires": [
+            [
+                "f1352184.eaa4f",
+                "6549abd6.3cd244"
+            ]
+        ]
+    },
+    {
+        "id": "dd119f1c.14a1",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "Initialisation",
+        "func": "msg.params={};\nmsg.params.sensorNode = 4;\nmsg.params.batteryLeft = 100;\nmsg.params.batteryUsageRate = 0.4;\nmsg.params.targetEGN = 2;\nmsg.params.sensorType = 1; //1 for periodic,2 for trigger\nmsg.time={};\nmsg.time.Tn = 4;\nmsg.time.tnth = 2;\nmsg.time.alpha = 0.8;\nflow.set('params4',msg.params);\nflow.set('time4',msg.time);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 600,
+        "wires": [
+            [
+                "91cc2b7a.833c88",
+                "5a129974.358048"
+            ]
+        ]
+    },
+    {
+        "id": "91cc2b7a.833c88",
+        "type": "mytimeout",
+        "z": "23467abd.82d316",
+        "name": "",
+        "outtopic": "",
+        "outsafe": "enabled",
+        "outwarning": "",
+        "outunsafe": "disabled",
+        "warning": "0",
+        "timer": "5",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": false,
+        "repeat": false,
+        "again": false,
+        "x": 1190,
+        "y": 660,
+        "wires": [
+            [
+                "4df51563.a1fc5c",
+                "a13e486a.e3d1e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "32d80a0.dcf7df6",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1370,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1d1ce120.dcea2f",
+        "type": "json",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "32d80a0.dcf7df6",
+                "22348478.e9a13c"
+            ]
+        ]
+    },
+    {
+        "id": "22348478.e9a13c",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "processWakeUpSignal",
+        "func": "flow.set('params4',msg.payload.params);\nflow.set('time4',msg.payload.time);\nmsg.params=msg.payload.params;\nmsg.time=msg.payload.time;\ndelete msg.payload;\nmsg.payload=\"on\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1100,
+        "y": 540,
+        "wires": [
+            [
+                "dbd3bdca.1bbaa",
+                "64fc4179.6a553",
+                "5a129974.358048"
+            ]
+        ]
+    },
+    {
+        "id": "dbd3bdca.1bbaa",
+        "type": "debug",
+        "z": "23467abd.82d316",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1350,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e0c70232.5fc78",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 950,
+        "y": 700,
+        "wires": [
+            [
+                "91cc2b7a.833c88"
+            ]
+        ]
+    },
+    {
+        "id": "cf496be9.acbc08",
+        "type": "mqtt-dynamic in",
+        "z": "cc49a83a.0b1868",
+        "name": "eGN2",
+        "topic": "eGN/k2",
+        "broker": "dc8f406e.9fc95",
+        "async": "true",
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "d640df01.36ec4"
+            ]
+        ]
+    },
+    {
+        "id": "a8bbd264.9df2f",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "aggData",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1260,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4b87f259.9f680c",
+        "type": "join",
+        "z": "cc49a83a.0b1868",
+        "name": "collectDATA",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1070,
+        "y": 260,
+        "wires": [
+            [
+                "a8bbd264.9df2f",
+                "cae12652.30cdd8"
+            ]
+        ]
+    },
+    {
+        "id": "a39f6c81.a2daf",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "goingToENODE",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1060,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "629a3d15.a31594",
+        "type": "change",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 440,
+        "wires": [
+            [
+                "4b87f259.9f680c"
+            ]
+        ]
+    },
+    {
+        "id": "345c5feb.7e816",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "endGame?",
+        "property": "payload.eot",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 970,
+        "y": 440,
+        "wires": [
+            [
+                "4b87f259.9f680c"
+            ],
+            [
+                "629a3d15.a31594"
+            ]
+        ]
+    },
+    {
+        "id": "d640df01.36ec4",
+        "type": "json",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "97611133.4761f",
+                "eb47fe3f.0a307"
+            ]
+        ]
+    },
+    {
+        "id": "cae12652.30cdd8",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "topicENODE",
+        "func": "delete msg.payload.eot;\nmsg.topic = \"eNode\";\nmsg.payload.From = \"eGN 2\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "a39f6c81.a2daf",
+                "3edc1e45.bcf6c2"
+            ]
+        ]
+    },
+    {
+        "id": "3edc1e45.bcf6c2",
+        "type": "mqtt-dynamic out",
+        "z": "cc49a83a.0b1868",
+        "name": "sendToeNode",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "dc8f406e.9fc95",
+        "x": 1280,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "eb47fe3f.0a307",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "Where is it from?",
+        "property": "payload.From",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "Sensor",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "eNode",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 870,
+        "y": 520,
+        "wires": [
+            [
+                "345c5feb.7e816",
+                "8b2da94d.7fc958"
+            ],
+            [
+                "75ed4341.77a64c",
+                "df770786.97ece8"
+            ]
+        ]
+    },
+    {
+        "id": "75ed4341.77a64c",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "calculate deltaT",
+        "func": "msg.payload.time.deltaT=(msg.payload.time.quality+msg.payload.time.greekTornado)/(msg.payload.time.Energy*msg.payload.time.CoV);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 580,
+        "wires": [
+            [
+                "89772230.32291",
+                "46591a24.c0e4c4"
+            ]
+        ]
+    },
+    {
+        "id": "89772230.32291",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "exponentialAveraging",
+        "func": "var Tn=msg.payload.time.Tn;\nvar tnth=msg.payload.time.tnth;\nvar alpha = msg.payload.time.alpha;\nvar Tn1 = (alpha*tnth)+((1-alpha)*Tn);\nvar tn1th = Tn1 + msg.payload.time.deltaT;\nmsg.payload.time.Tn=Math.ceil(Tn1);\nmsg.payload.time.tnth=Math.ceil(tn1th);\nmsg.saveFromTimer=msg.payload;\nmsg.payload=\"on\";\nmsg.timeout=Math.ceil(tn1th);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1100,
+        "y": 580,
+        "wires": [
+            [
+                "b4c7a291.06b38"
+            ]
+        ]
+    },
+    {
+        "id": "b4c7a291.06b38",
+        "type": "mytimeout",
+        "z": "cc49a83a.0b1868",
+        "name": "SleepCounter",
+        "outtopic": "",
+        "outsafe": "on",
+        "outwarning": "",
+        "outunsafe": "off",
+        "warning": "",
+        "timer": "",
+        "debug": false,
+        "ndebug": false,
+        "ignoreCase": true,
+        "repeat": false,
+        "again": false,
+        "x": 990,
+        "y": 680,
+        "wires": [
+            [
+                "bac9d50f.37cca8",
+                "b4b3145b.85d7d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bac9d50f.37cca8",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1170,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "97611133.4761f",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8b2da94d.7fc958",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1110,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "df770786.97ece8",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1100,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "46591a24.c0e4c4",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 820,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "b4b3145b.85d7d8",
+        "type": "switch",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 990,
+        "y": 760,
+        "wires": [
+            [
+                "49807ed.e04988"
+            ]
+        ]
+    },
+    {
+        "id": "49807ed.e04988",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "MQTTsetter",
+        "func": "msg.payload=msg.saveFromTimer;\ndelete msg.saveFromTimer;\nvar destination = \"sensor/sn\"+msg.payload.params.sensorNode;\nmsg.topic=destination;\nmsg.payload.From=\"eGN 2\";\ndelete msg.timeout;\ndelete msg.payload.value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 840,
+        "wires": [
+            [
+                "aee1963d.e6d998",
+                "c55daade.837e88"
+            ]
+        ]
+    },
+    {
+        "id": "aee1963d.e6d998",
+        "type": "debug",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 990,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c55daade.837e88",
+        "type": "mqtt-dynamic out",
+        "z": "cc49a83a.0b1868",
+        "name": "wakeUpSensor",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "broker": "dc8f406e.9fc95",
+        "x": 1180,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "decc4355.80bb9",
+        "type": "switch",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "params.batteryLeft",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "6943e20.255cd2"
+            ]
+        ]
+    },
+    {
+        "id": "debe642a.654208",
+        "type": "switch",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "params.batteryLeft",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 160,
+        "wires": [
+            [
+                "f75adaaf.efdd88"
+            ]
+        ]
+    },
+    {
+        "id": "c25c9584.31a5c8",
+        "type": "switch",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "params.batteryLeft",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 600,
+        "wires": [
+            [
+                "ab5e8752.9273a8"
+            ]
+        ]
+    },
+    {
+        "id": "64fc4179.6a553",
+        "type": "switch",
+        "z": "23467abd.82d316",
+        "name": "",
+        "property": "params.batteryLeft",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 600,
+        "wires": [
+            [
+                "91cc2b7a.833c88"
+            ]
+        ]
+    },
+    {
+        "id": "63a95973.82e7d8",
+        "type": "ui_chart",
+        "z": "23467abd.82d316",
+        "name": "",
+        "group": "84f25c1f.d9696",
+        "order": 0,
+        "width": "15",
+        "height": "10",
+        "label": "Battery Usage with Time",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "100000",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22a1336d.a0583c",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "ForSensor1",
+        "func": "msg.payload=msg.params.batteryLeft;\nmsg.topic=\"Sensor 1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 140,
+        "wires": [
+            [
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "5278d10a.bdedb",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "clear Chart",
+        "func": "msg.payload=[];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "fca43b36.a9b328",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 440,
+        "y": 420,
+        "wires": [
+            [
+                "5278d10a.bdedb"
+            ]
+        ]
+    },
+    {
+        "id": "3a2ae01c.8b519",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "ForSensor3",
+        "func": "msg.payload=msg.params.batteryLeft;\nmsg.topic=\"Sensor 2(BT)\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "a5612390.ad9cb",
+        "type": "delay",
+        "z": "23467abd.82d316",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "6c5ec189.ae356"
+            ]
+        ]
+    },
+    {
+        "id": "6c5ec189.ae356",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "BatteryLossNoSleep",
+        "func": "\nif(msg.topic!=\"init\")\n{\n        msg.payload-=(msg.payload*(0.003));\n}\nmsg.topic=\"With no Sleep\";\nif(msg.payload>=10)\n{\n    return msg;\n}\nif(msg.payload<10 && msg.payload>0)\n{\n    msg.payload=0;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 560,
+        "y": 920,
+        "wires": [
+            [
+                "a5612390.ad9cb",
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "385202f5.d6012e",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Start Device Without Sleep",
+        "topic": "init",
+        "payload": "100",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "6c5ec189.ae356"
+            ]
+        ]
+    },
+    {
+        "id": "5a129974.358048",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "ForSensor4",
+        "func": "msg.payload=msg.params.batteryLeft;\nmsg.topic=\"Sensor 4\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1110,
+        "y": 420,
+        "wires": [
+            [
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "f4d49e71.58982",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "ForSensor2",
+        "func": "msg.payload=msg.params.batteryLeft;\nmsg.topic=\"Sensor 2\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 160,
+        "wires": [
+            [
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "53c8fcef.4fc524",
+        "type": "delay",
+        "z": "23467abd.82d316",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1220,
+        "y": 840,
+        "wires": [
+            [
+                "e52f46e3.8c0318"
+            ]
+        ]
+    },
+    {
+        "id": "e52f46e3.8c0318",
+        "type": "function",
+        "z": "23467abd.82d316",
+        "name": "BatteryLossFixedSleep",
+        "func": "if(msg.topic!=\"init\")\n{\n        msg.payload-=(msg.payload*(0.004));\n        msg.payload-=(msg.payload*(0.002));\n}\nmsg.topic=\"With 5s Fixed Sleep\";\nif(msg.payload>=10)\n{\n    return msg;\n}\nif(msg.payload<10 && msg.payload>0)\n{\n    msg.payload=0;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1210,
+        "y": 920,
+        "wires": [
+            [
+                "53c8fcef.4fc524",
+                "63a95973.82e7d8"
+            ]
+        ]
+    },
+    {
+        "id": "8744c663.bf0978",
+        "type": "inject",
+        "z": "23467abd.82d316",
+        "name": "Start Device With Fixed Sleep",
+        "topic": "init",
+        "payload": "100",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 940,
+        "y": 920,
+        "wires": [
+            [
+                "e52f46e3.8c0318"
+            ]
+        ]
+    },
+    {
+        "id": "b7ab732.5db849",
+        "type": "function",
+        "z": "cc49a83a.0b1868",
+        "name": "",
+        "func": "delete msg.payload.value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "8956cff1.de681"
+            ]
+        ]
+    }
+]
